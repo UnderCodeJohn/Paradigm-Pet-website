@@ -1,0 +1,168 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Paradigm Pet Professionals</title>
+    <link rel="icon" type="image/x-icon" href="resources\images\P-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="resources\css\styles.css">
+    <link rel="stylesheet" href="resources\css\styles-contact.css">
+    <link rel="stylesheet" href="resources\css\styles-popup.css">
+
+    <!-- Load external JavaScript -->
+    <script src="scripts.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="resources\images\paradigm logo.png" alt="">
+    </header>
+    <nav class="nav-area">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cats.html">Cats</a>
+                <ul>
+                    <li><a href="cats.html#zero-four">Zero to Four Weeks</a></li>
+                    <li><a href="cats.html#four-one-year">Four Weeks to One Year</a></li>
+                    <li><a href="cats.html#one-year-7">One Year to Seven Years</a></li>
+                    <li><a href="cats.html#7-year-more">Seven Years and More</a></li>
+                </ul>
+            </li>
+            <li><a href="dogs.html">Dogs</a>
+                <ul>
+                    <li><a href="dogs.html#diet">Diet & Exercise</a></li>
+                    <li><a href="dogs.html#grooming">Grooming & Handling</a></li>
+                    <li><a href="dogs.html#vaccinations">Vaccinations & Medications</a></li>
+                </ul>
+            </li>
+            <li><a href="fish.html">Fish</a>
+                <ul>
+                    <li><a href="fish.html#fresh">Freshwater Fish</a></li>
+                    <li><a href="fish.html#salt">Saltwater Fish</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="container-sm mx-sm-auto py-sm-3">
+            <div class="row my-sm-5">
+                <div class="col-sm">
+                    <h1 class="text-center">Our Pexperts Are Here to Help</h1>
+                    <form>
+                        <label for="fname">Owner's Name</label><br>
+                        <div style="float: left; width: 50%;"><input type="text" id="fname" name="fname"
+                                placeholder="First Name"></div>
+                        <div style="float: left; width: 50%;"><input type="text" id="lname" name="lname"
+                                placeholder="Last Name"></div>
+                        <div style="clear:both;">&nbsp;</div>
+                        <label for="Phone">Phone</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="555-555-5555"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="email@email.com"><br>
+                        <label for="email">Time Zone</label><br>
+                        <select name="timezone_offset" id="timezone-offset">
+                            <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                            <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                            <option value="-10:00">(GMT -10:00) Hawaii</option>
+                            <option value="-09:50">(GMT -9:30) Taiohae</option>
+                            <option value="-09:00">(GMT -9:00) Alaska</option>
+                            <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                            <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                            <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                            <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                            <option value="-04:50">(GMT -4:30) Caracas</option>
+                            <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                            <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                            <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                            <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                            <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                            <option value="+00:00" selected="selected">(GMT) Western Europe Time, London, Lisbon,
+                                Casablanca</option>
+                            <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                            <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                            <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                            <option value="+03:50">(GMT +3:30) Tehran</option>
+                            <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                            <option value="+04:50">(GMT +4:30) Kabul</option>
+                            <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                            <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                            <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                            <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                            <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+                            <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                            <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                            <option value="+08:75">(GMT +8:45) Eucla</option>
+                            <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                            <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+                            <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                            <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+                            <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                            <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+                            <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                            <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+                            <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+                            <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+                        </select>
+                        <label for="petname">Pet's Name</label><br>
+                        <input type="text" id="petname" name="petname" placeholder=" Pet Name" style="width: 50%;"><br>
+                        <label for="pettype"> Pet's Type</label><br>
+                        <input type="text" id="pettype" name="pettype" placeholder="Dog" style="width: 50%;"><br>
+                        <label for="age">Pet's Age</label><br>
+                        <input type="number" id="age" name="age" placeholder="3" style="width: 50%;"><br>
+                        <br><br>
+                        <input type="submit" value="Submit"
+                            class="container-sm col-sm text-center d-flex justify-content-center" style="width: 50%;">
+                    </form>
+                </div>
+
+                <div class="col-sm">
+                    <img src="resources\images\human5.jpg" width="100%" height="100%">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="bottom-nav container-fluid  py-sm-3">
+            <div class="row text-center">
+                <div class="col-sm">
+                    <img src="resources\images\paradigm logo.png" alt="" height="auto">
+                </div>
+                <div class="col-sm my-sm-auto">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cats.html">Cats</a></li>
+                        <li><a href="dogs.html">Dogs</a></li>
+                        <li><a href="fish.html">Fish</a></li>
+                        <li><a href="contact-form.html">Need Help?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center py-sm-1">
+            <p>Copyright © 2022 Paradigm Pet Professionals.com - All Rights Reserved</p>
+        </footer>
+</body>
+
+</html>
